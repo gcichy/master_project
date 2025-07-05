@@ -1,0 +1,6 @@
+data/
+Dane_temp/
+.log
+.venv/
+venv/
+.cache.sqlite
