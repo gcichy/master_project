@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cb0e490f6b3356d5e5f2d742a05e586d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cb0e490f6b3356d5e5f2d742a05e586d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cb0e490f6b3356d5e5f2d742a05e586d = L.map(
+                "map_cb0e490f6b3356d5e5f2d742a05e586d",
+                {
+                    center: [51.5550403, -0.1083997],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    subdomains: "abcd",
+                    maxZoom: 20,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6c5dcfb17354ed218e11f0e96a9b5ca = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f6c5dcfb17354ed218e11f0e96a9b5ca.addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var circle_marker_609e35e4e429117a65ef12c0e344bb09 = L.circleMarker(
+                [51.5550403, -0.1083997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_609e35e4e429117a65ef12c0e344bb09.bindTooltip(
+                `<div>
+                     Arsenal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_182a7244d91215f6b6380f00bff4d825 = L.marker(
+                [51.575040300000005, -0.0583997],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_3f7524993532556cd70f66c58e0d12e9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eArsenal\u003c/div\u003e"});
+            marker_182a7244d91215f6b6380f00bff4d825.setIcon(div_icon_3f7524993532556cd70f66c58e0d12e9);
+        
+    
+            var circle_marker_3790978568da5968d1746b389871fe40 = L.circleMarker(
+                [52.5091264, -1.8850354],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_3790978568da5968d1746b389871fe40.bindTooltip(
+                `<div>
+                     Aston Villa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0098eadc0f2e69ba2341731a128e1cef = L.marker(
+                [52.5091264, -1.8350354],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_960c48df40b34ff1ccbd4c61f9cac813 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eAston Villa\u003c/div\u003e"});
+            marker_0098eadc0f2e69ba2341731a128e1cef.setIcon(div_icon_960c48df40b34ff1ccbd4c61f9cac813);
+        
+    
+            var circle_marker_f661c55f0115bb81379ed1ad7bef82b0 = L.circleMarker(
+                [50.7351814, -1.8383279],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_f661c55f0115bb81379ed1ad7bef82b0.bindTooltip(
+                `<div>
+                     Bournemouth
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9dae9f68b359da63539d1dfbef15a8d = L.marker(
+                [50.7351814, -1.7883278999999999],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_fe4685f49a10bad5b7754ed9f0e77d5c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eBournemouth\u003c/div\u003e"});
+            marker_b9dae9f68b359da63539d1dfbef15a8d.setIcon(div_icon_fe4685f49a10bad5b7754ed9f0e77d5c);
+        
+    
+            var circle_marker_b84d2a14d7717e8154bc2a90b50ccc82 = L.circleMarker(
+                [51.490713, -0.2889802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_b84d2a14d7717e8154bc2a90b50ccc82.bindTooltip(
+                `<div>
+                     Brentford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07ee8562b908df239d3461900ac3f978 = L.marker(
+                [51.490713, -0.48898020000000003],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_c4a45c03f0fdd35185c35710e38599e3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eBrentford\u003c/div\u003e"});
+            marker_07ee8562b908df239d3461900ac3f978.setIcon(div_icon_c4a45c03f0fdd35185c35710e38599e3);
+        
+    
+            var circle_marker_2698b6856cbb114ed21124ba45c35151 = L.circleMarker(
+                [50.8615471, -0.0836931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_2698b6856cbb114ed21124ba45c35151.bindTooltip(
+                `<div>
+                     Brighton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73e8c23c2491cf826b978bc8c6db8f11 = L.marker(
+                [50.8615471, -0.033693100000000004],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_fc7b07e6bc0585cf234c3d9df5e49a45 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eBrighton\u003c/div\u003e"});
+            marker_73e8c23c2491cf826b978bc8c6db8f11.setIcon(div_icon_fc7b07e6bc0585cf234c3d9df5e49a45);
+        
+    
+            var circle_marker_aa748b2736b9546c3e9db6c49bdfa042 = L.circleMarker(
+                [53.7893606, -2.2298547],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_aa748b2736b9546c3e9db6c49bdfa042.bindTooltip(
+                `<div>
+                     Burnley
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_605e1c0a94d6cbd5a95e85d5b553d4a1 = L.marker(
+                [53.7893606, -2.1798547000000004],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_59d9cfa5b25c6e9428fdb2d5a9e7177e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eBurnley\u003c/div\u003e"});
+            marker_605e1c0a94d6cbd5a95e85d5b553d4a1.setIcon(div_icon_59d9cfa5b25c6e9428fdb2d5a9e7177e);
+        
+    
+            var circle_marker_57bfa3cbea7483b88d5e14787ca0a0c0 = L.circleMarker(
+                [51.4728212, -3.2029626],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_57bfa3cbea7483b88d5e14787ca0a0c0.bindTooltip(
+                `<div>
+                     Cardiff
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68a6c0edd570d666969a99e77b92430b = L.marker(
+                [51.4728212, -3.1529626000000004],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_7dcb56a7e1ba898d271961387ffd8f2e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eCardiff\u003c/div\u003e"});
+            marker_68a6c0edd570d666969a99e77b92430b.setIcon(div_icon_7dcb56a7e1ba898d271961387ffd8f2e);
+        
+    
+            var circle_marker_f8df400b242c89a3341d6541b3c4226f = L.circleMarker(
+                [51.4816869, -0.1910336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_f8df400b242c89a3341d6541b3c4226f.bindTooltip(
+                `<div>
+                     Chelsea
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f33b0b8591e613e913c065d37f13562 = L.marker(
+                [51.4816869, -0.14103359999999998],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_e3e9139e43c322588c836dbf5f1fe2d8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eChelsea\u003c/div\u003e"});
+            marker_6f33b0b8591e613e913c065d37f13562.setIcon(div_icon_e3e9139e43c322588c836dbf5f1fe2d8);
+        
+    
+            var circle_marker_78147896d9e5ed8d0aae4705861858da = L.circleMarker(
+                [51.3982429, -0.0852551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_78147896d9e5ed8d0aae4705861858da.bindTooltip(
+                `<div>
+                     Crystal Palace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f532dde5d31f216ee4176ac33da07cb6 = L.marker(
+                [51.3982429, -0.0352551],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_146770759de138a2f544242e57477147 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eCrystal Palace\u003c/div\u003e"});
+            marker_f532dde5d31f216ee4176ac33da07cb6.setIcon(div_icon_146770759de138a2f544242e57477147);
+        
+    
+            var circle_marker_fc8aa71a552fe79c67f20390a725c71e = L.circleMarker(
+                [53.4386898, -2.9664193],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_fc8aa71a552fe79c67f20390a725c71e.bindTooltip(
+                `<div>
+                     Everton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11e2eb40f0d5a041ccb4b534820c5685 = L.marker(
+                [53.4386898, -2.9164193000000003],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_cc0200a96aedea7927e05c98c28dedf6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eEverton\u003c/div\u003e"});
+            marker_11e2eb40f0d5a041ccb4b534820c5685.setIcon(div_icon_cc0200a96aedea7927e05c98c28dedf6);
+        
+    
+            var circle_marker_7e11654fe03961c6e52334b6f850fe8b = L.circleMarker(
+                [51.4749218, -0.2217448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_7e11654fe03961c6e52334b6f850fe8b.bindTooltip(
+                `<div>
+                     Fulham
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b3b5d05ac16e500dea3bbd5cdc08ed0 = L.marker(
+                [51.454921799999994, -0.3117448],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_fd91df9c676918fba731ca0c38044b04 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eFulham\u003c/div\u003e"});
+            marker_9b3b5d05ac16e500dea3bbd5cdc08ed0.setIcon(div_icon_fd91df9c676918fba731ca0c38044b04);
+        
+    
+            var circle_marker_46f2562fdd4badd18c72116cba88af9a = L.circleMarker(
+                [53.6543494, -1.7682999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_46f2562fdd4badd18c72116cba88af9a.bindTooltip(
+                `<div>
+                     Huddersfield
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae2fbc6ace8ff4bf3002a8bd4a7ebc32 = L.marker(
+                [53.6543494, -1.7182998999999999],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_b8b286b32f7a55a2ea7b451ccac752d4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eHuddersfield\u003c/div\u003e"});
+            marker_ae2fbc6ace8ff4bf3002a8bd4a7ebc32.setIcon(div_icon_b8b286b32f7a55a2ea7b451ccac752d4);
+        
+    
+            var circle_marker_6d929b95178ba186f0d38ebf0a8367d8 = L.circleMarker(
+                [52.6203969, -1.1423352],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_6d929b95178ba186f0d38ebf0a8367d8.bindTooltip(
+                `<div>
+                     Leicester
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_032d259abea82f8a1e4dfbabd23e8a96 = L.marker(
+                [52.6203969, -1.0923352],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_b6efd88a18ab163769148517e4269cc6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eLeicester\u003c/div\u003e"});
+            marker_032d259abea82f8a1e4dfbabd23e8a96.setIcon(div_icon_b6efd88a18ab163769148517e4269cc6);
+        
+    
+            var circle_marker_cb2c1c1ae3316973fc982e157eec4656 = L.circleMarker(
+                [53.7778981, -1.5721267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_cb2c1c1ae3316973fc982e157eec4656.bindTooltip(
+                `<div>
+                     Leeds
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a73628fc4cde2ae20b5c69a2a8ebded7 = L.marker(
+                [53.7778981, -1.5221267],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_8e13750ad0191619821ae25a6c5198b6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eLeeds\u003c/div\u003e"});
+            marker_a73628fc4cde2ae20b5c69a2a8ebded7.setIcon(div_icon_8e13750ad0191619821ae25a6c5198b6);
+        
+    
+            var circle_marker_b2804778f345346acb8a2bcedaf5f4a8 = L.circleMarker(
+                [53.4309164, -2.9609314],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_b2804778f345346acb8a2bcedaf5f4a8.bindTooltip(
+                `<div>
+                     Liverpool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3a444299912a15b3249a6c05f2f8ecf = L.marker(
+                [53.380916400000004, -2.9909314],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_d0c8204f5b4c01ac1136ddd3aae8eff6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eLiverpool\u003c/div\u003e"});
+            marker_f3a444299912a15b3249a6c05f2f8ecf.setIcon(div_icon_d0c8204f5b4c01ac1136ddd3aae8eff6);
+        
+    
+            var circle_marker_723d0d14664dbc5bdc3fb5fde044939f = L.circleMarker(
+                [51.8841259, -0.4316701],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_723d0d14664dbc5bdc3fb5fde044939f.bindTooltip(
+                `<div>
+                     Luton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97c19246545874caff7eba5e894b733b = L.marker(
+                [51.8841259, -0.3816701],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_3fd2985e7d333180e187cfddcfd1665e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eLuton\u003c/div\u003e"});
+            marker_97c19246545874caff7eba5e894b733b.setIcon(div_icon_3fd2985e7d333180e187cfddcfd1665e);
+        
+    
+            var circle_marker_9ff81689f468757e21dfac81a5caafc0 = L.circleMarker(
+                [53.4831448, -2.2005273],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_9ff81689f468757e21dfac81a5caafc0.bindTooltip(
+                `<div>
+                     Manchester City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d48a8272a7a52227713b6e0d5531d26 = L.marker(
+                [53.4831448, -2.1505273000000003],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_72f50af38c248bb72d58022229ca54cc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eManchester City\u003c/div\u003e"});
+            marker_8d48a8272a7a52227713b6e0d5531d26.setIcon(div_icon_72f50af38c248bb72d58022229ca54cc);
+        
+    
+            var circle_marker_f4bc1ab74e8e2760a5d579b14f07ea86 = L.circleMarker(
+                [53.4631095, -2.2913865],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_f4bc1ab74e8e2760a5d579b14f07ea86.bindTooltip(
+                `<div>
+                     Manchester United
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_221e5febf1c4b89aad5d3eb6ae693b94 = L.marker(
+                [53.413109500000004, -2.3213865],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_48d1a7c115a788dec095b71e384567fc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eManchester United\u003c/div\u003e"});
+            marker_221e5febf1c4b89aad5d3eb6ae693b94.setIcon(div_icon_48d1a7c115a788dec095b71e384567fc);
+        
+    
+            var circle_marker_b9080ac2c5c30b65ff6f2e402206d788 = L.circleMarker(
+                [54.9754693, -1.6218737],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_b9080ac2c5c30b65ff6f2e402206d788.bindTooltip(
+                `<div>
+                     Newcastle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2222d3018649819a99add936385a8442 = L.marker(
+                [54.9754693, -1.5718737],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_0e934345d29d29b8ba2f1c93c9d2ec5e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eNewcastle\u003c/div\u003e"});
+            marker_2222d3018649819a99add936385a8442.setIcon(div_icon_0e934345d29d29b8ba2f1c93c9d2ec5e);
+        
+    
+            var circle_marker_cc9743fb8f4392dfdc378621418176f9 = L.circleMarker(
+                [52.6220315, 1.3093222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_cc9743fb8f4392dfdc378621418176f9.bindTooltip(
+                `<div>
+                     Norwich
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5555690cc651645e8226fd17b2b2b198 = L.marker(
+                [52.6220315, 1.3593222],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_26d4d6a2d8436bb4cc3a4830071c76a2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eNorwich\u003c/div\u003e"});
+            marker_5555690cc651645e8226fd17b2b2b198.setIcon(div_icon_26d4d6a2d8436bb4cc3a4830071c76a2);
+        
+    
+            var circle_marker_7056c5d425fc5f129d5af1a7139b37e0 = L.circleMarker(
+                [52.9399387, -1.1328954],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_7056c5d425fc5f129d5af1a7139b37e0.bindTooltip(
+                `<div>
+                     Nottingham Forest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_118b124811eca0346da348a507c6139a = L.marker(
+                [52.9399387, -1.0828954],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_2a67d0733c8f15b44506ffb65151197f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eNottingham Forest\u003c/div\u003e"});
+            marker_118b124811eca0346da348a507c6139a.setIcon(div_icon_2a67d0733c8f15b44506ffb65151197f);
+        
+    
+            var circle_marker_2802d7f64a04e19727d0e0beb816b4ae = L.circleMarker(
+                [53.3703429, -1.4707145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_2802d7f64a04e19727d0e0beb816b4ae.bindTooltip(
+                `<div>
+                     Sheffield United
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d23c31585948050b813c4c3ff9e567e = L.marker(
+                [53.3703429, -1.4207144999999999],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_5aea5c068569857e1dfe6b5a95a49276 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eSheffield United\u003c/div\u003e"});
+            marker_9d23c31585948050b813c4c3ff9e567e.setIcon(div_icon_5aea5c068569857e1dfe6b5a95a49276);
+        
+    
+            var circle_marker_3cbe77192cda575a8c234c096d940572 = L.circleMarker(
+                [50.9058615, -1.3908774],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_3cbe77192cda575a8c234c096d940572.bindTooltip(
+                `<div>
+                     Southampton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad9eb84624585eb86bf19d815328121f = L.marker(
+                [50.9058615, -1.3408773999999999],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_305061b6bbc2410f29dbd07c05aa6625 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eSouthampton\u003c/div\u003e"});
+            marker_ad9eb84624585eb86bf19d815328121f.setIcon(div_icon_305061b6bbc2410f29dbd07c05aa6625);
+        
+    
+            var circle_marker_d0c8395eff37fdd504732178cedb575b = L.circleMarker(
+                [52.9883401, -2.1755919],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_d0c8395eff37fdd504732178cedb575b.bindTooltip(
+                `<div>
+                     Stoke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ba1970de84249b67fce6a1aeccb52bd = L.marker(
+                [52.9883401, -2.1255919000000003],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_a05f98406eb635511101199eab8511bf = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eStoke\u003c/div\u003e"});
+            marker_8ba1970de84249b67fce6a1aeccb52bd.setIcon(div_icon_a05f98406eb635511101199eab8511bf);
+        
+    
+            var circle_marker_afdbb39350ecaa7828d103cffa811f31 = L.circleMarker(
+                [51.6428065, -3.934739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_afdbb39350ecaa7828d103cffa811f31.bindTooltip(
+                `<div>
+                     Swansea
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df71af9b782cc386e94d8a1a1baa3a1c = L.marker(
+                [51.6428065, -3.884739],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_fc0863070d78bfbd5cd94796d8076dea = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eSwansea\u003c/div\u003e"});
+            marker_df71af9b782cc386e94d8a1a1baa3a1c.setIcon(div_icon_fc0863070d78bfbd5cd94796d8076dea);
+        
+    
+            var circle_marker_3d0a8e72352aff1253bfaf3140e82a78 = L.circleMarker(
+                [51.604157, -0.0662604],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_3d0a8e72352aff1253bfaf3140e82a78.bindTooltip(
+                `<div>
+                     Tottenham
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3222b4a51c708ea2bcb324c952802213 = L.marker(
+                [51.604157, -0.016260399999999994],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_07d3868165260483960819e5ffc5d44b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eTottenham\u003c/div\u003e"});
+            marker_3222b4a51c708ea2bcb324c952802213.setIcon(div_icon_07d3868165260483960819e5ffc5d44b);
+        
+    
+            var circle_marker_7c40f6b688ad2e9485debb48f7ce1ad0 = L.circleMarker(
+                [51.5560695, -0.2796034],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_7c40f6b688ad2e9485debb48f7ce1ad0.bindTooltip(
+                `<div>
+                     Tottenham Old
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe835de9a7c5e5c72d0ad9cd06a8d475 = L.marker(
+                [51.536069499999996, -0.3696034],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_f3cdf2f1a86ea80848712e8f10f903c0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eTottenham Old\u003c/div\u003e"});
+            marker_fe835de9a7c5e5c72d0ad9cd06a8d475.setIcon(div_icon_f3cdf2f1a86ea80848712e8f10f903c0);
+        
+    
+            var circle_marker_7959105d1519b7cf0b022349a4b9a0fa = L.circleMarker(
+                [51.6497589, -0.4013489],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_7959105d1519b7cf0b022349a4b9a0fa.bindTooltip(
+                `<div>
+                     Watford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b91f3c9bda5a33d3d6edb4e51148298 = L.marker(
+                [51.6497589, -0.3513489],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_c3c4bb4eddfd070dd7e30786f18fe236 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eWatford\u003c/div\u003e"});
+            marker_8b91f3c9bda5a33d3d6edb4e51148298.setIcon(div_icon_c3c4bb4eddfd070dd7e30786f18fe236);
+        
+    
+            var circle_marker_b736082ce64ad0594f839fcd8dd10b76 = L.circleMarker(
+                [51.5386206, -0.0166238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_b736082ce64ad0594f839fcd8dd10b76.bindTooltip(
+                `<div>
+                     West Ham
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_589bdaaa337b28783a0bf28b5b0f4cfa = L.marker(
+                [51.5386206, 0.0333762],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_cbb923a03ec5172123f55b332af71e96 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eWest Ham\u003c/div\u003e"});
+            marker_589bdaaa337b28783a0bf28b5b0f4cfa.setIcon(div_icon_cbb923a03ec5172123f55b332af71e96);
+        
+    
+            var circle_marker_6c342ad2027c12ade5d266719bd88446 = L.circleMarker(
+                [52.5091654, -1.9636621],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_6c342ad2027c12ade5d266719bd88446.bindTooltip(
+                `<div>
+                     West Brom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9ab8b654e5fc15f30d2f19a752fef64 = L.marker(
+                [52.4591654, -1.9936621],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_3d06b974da160f16f0c6c6917918598f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eWest Brom\u003c/div\u003e"});
+            marker_a9ab8b654e5fc15f30d2f19a752fef64.setIcon(div_icon_3d06b974da160f16f0c6c6917918598f);
+        
+    
+            var circle_marker_9bdaf5aaae65aac12b5caabf9a09614f = L.circleMarker(
+                [52.5902723, -2.1304079],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_9bdaf5aaae65aac12b5caabf9a09614f.bindTooltip(
+                `<div>
+                     Wolves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_264c41e69338c7d0dcabb79cc98916f1 = L.marker(
+                [52.5902723, -2.0804079],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_8ea6f90c4773345a7d317c20524a6d99 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eWolves\u003c/div\u003e"});
+            marker_264c41e69338c7d0dcabb79cc98916f1.setIcon(div_icon_8ea6f90c4773345a7d317c20524a6d99);
+        
+    
+            var circle_marker_b60671370876a6f32bebeaf91117195a = L.circleMarker(
+                [52.054509, 1.146325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            circle_marker_b60671370876a6f32bebeaf91117195a.bindTooltip(
+                `<div>
+                     Ipswich
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_863aca539a8f011501cdbb1d999e2861 = L.marker(
+                [52.054509, 1.196325],
+                {}
+            ).addTo(map_cb0e490f6b3356d5e5f2d742a05e586d);
+        
+    
+            var div_icon_62d376aa61fcd361e01fe16a0ef6f7c4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 20px; color: black; white-space: nowrap;\"\u003eIpswich\u003c/div\u003e"});
+            marker_863aca539a8f011501cdbb1d999e2861.setIcon(div_icon_62d376aa61fcd361e01fe16a0ef6f7c4);
+        
+</script>
+</html>
